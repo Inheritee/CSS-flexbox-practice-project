@@ -18,10 +18,13 @@
 /* article class, main container */
 .product {
   width: 600px;
-  min-height: 100;
   margin: 30px auto;
-  border: 7.5px ridge;
-  border-color: #ffbf00;
+  /* border: 7.5px ridge;
+  border-color: #ffbf00; */
+  border-right: solid 3px;
+  border-color: wheat;
+  border-left: solid 3px;
+  border-color: wheat;
 }
 /* main container within article */
 .container {
@@ -116,7 +119,7 @@
   /* border-color: wheat; */
   border: none;
   border-top: 2px solid;
-  border-color: #d3d3d3;
+  border-color: #ffbf00;
   width: 100%;
   cursor: pointer;
 }
