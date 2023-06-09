@@ -121,6 +121,7 @@
 .add-cart {
   display: flex;
   justify-content: center;
+  color: white;
   background-color: wheat;
   /* border-color: wheat; */
   border: 2px solid #ffbf00;
