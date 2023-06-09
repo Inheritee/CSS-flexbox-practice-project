@@ -13,6 +13,8 @@
   font-weight: bold;
   background-color: wheat;
   padding: 5px;
+  border: solid 2px #ffbf00;
+  border-bottom: none;
 }
 
 /* article class, main container */
@@ -21,15 +23,19 @@
   margin: 30px auto;
   /* border: 7.5px ridge;
   border-color: #ffbf00; */
-  border-right: solid 3px;
+  /* border-right: solid 3px;
   border-color: wheat;
   border-left: solid 3px;
-  border-color: wheat;
+  border-color: wheat; */
 }
 /* main container within article */
 .container {
   display: flex;
   gap: 20px;
+  border-right: solid 2px;
+  border-color: #ffbf00;
+  border-left: solid 2px;
+  border-color: #ffbf00;
 }
 
 /* img of product (shoe) */
@@ -117,9 +123,8 @@
   justify-content: center;
   background-color: wheat;
   /* border-color: wheat; */
-  border: none;
-  border-top: 2px solid;
-  border-color: #ffbf00;
+  border: 2px solid #ffbf00;
+  /* border-top: none; */
   width: 100%;
   cursor: pointer;
 }
