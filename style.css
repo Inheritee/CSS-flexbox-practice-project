@@ -1,0 +1,127 @@
+/* global reset, box sizing to ignore margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+/* Top of product page (title) */
+.title {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: wheat;
+  padding: 5px;
+}
+
+/* article class, main container */
+.product {
+  width: 600px;
+  min-height: 100;
+  margin: 30px auto;
+  border: 7.5px ridge;
+  border-color: #ffbf00;
+}
+/* main container within article */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* img of product (shoe) */
+.nikeshoe {
+  display: 1;
+  width: 200px;
+  height: 200px;
+}
+
+/* product price + information + hyperlink */
+.product-information {
+  margin-top: 20px;
+  flex: 1;
+}
+
+/* seperate div/container to fit price + shipping + hyperlink */
+.product-pricing {
+  display: flex;
+  display: inline;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+}
+
+/* The price */
+.price {
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+/*The shipping */
+.shipping {
+  font-style: italic;
+  color: green;
+  font-weight: bold;
+}
+
+/* Describing the product(shoe) */
+.product-description {
+  line-height: 1.1;
+  /* margin top 30 expands container height 
+  at the bottom (exceeds 200px height)... 
+  dont know fix 09-06-2023 */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* LVHA (link -> visited -> hover -> active */
+.link:link,
+.link:visited {
+  color: black;
+  display: inline-block;
+}
+
+.link:hover {
+  background-color: #ffbf00;
+  text-decoration: none;
+  color: white;
+}
+
+/* not needed for now */
+/* .link:active {
+} */
+
+/* seperate div/container to fit details title + list */
+.product-details {
+  flex: 1;
+  margin-top: 20px;
+}
+
+/* title of product details section */
+.details-title {
+  font-weight: bold;
+}
+
+/* moving the <li> bullet points inward to the right */
+.details-list {
+  margin-left: 25px;
+}
+
+/* Button at bottom of page to add to cart */
+.add-cart {
+  display: flex;
+  justify-content: center;
+  background-color: wheat;
+  /* border-color: wheat; */
+  border: none;
+  border-top: 2px solid;
+  border-color: #d3d3d3;
+  width: 100%;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background-color: #ffbf00;
+  color: white;
+}
