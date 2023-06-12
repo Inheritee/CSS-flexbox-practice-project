@@ -13,7 +13,8 @@
   font-weight: bold;
   background-color: wheat;
   padding: 5px;
-  border: solid 2px #ffbf00;
+  /* border: solid 2px #ffbf00; */
+  /* border-top: solid 2px #ffbf00; */
   border-bottom: none;
 }
 
@@ -123,8 +124,9 @@
   color: white;
   background-color: wheat;
   /* border-color: wheat; */
-  border: 2px solid #ffbf00;
-  /* border-top: none; */
+  /* border: 2px solid #ffbf00; */
+  border: none;
+  border-top: 2px solid #ffbf00;
   width: 100%;
   cursor: pointer;
 }
@@ -132,4 +134,20 @@
 .add-cart:hover {
   background-color: #ffbf00;
   color: white;
+}
+
+/* grid layout instead of flexbox */
+.product {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  column-gap: 20px;
+  border: 2px solid #ffbf00;
+}
+
+.title {
+  grid-column: 1/-1;
+}
+
+.add-cart {
+  grid-column: 1/-1;
 }
