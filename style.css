@@ -22,21 +22,12 @@
 .product {
   width: 600px;
   margin: 30px auto;
-  /* border: 7.5px ridge;
-  border-color: #ffbf00;
-  border-right: solid 3px wheat;
-  border-color: wheat;
-  border-left: solid 3px wheat;
-  border-color: wheat; */
+  border: 2px solid #ffbf00;
 }
 /* main container within article */
 .container {
   display: flex;
   gap: 20px;
-  border-right: solid 2px #ffbf00;
-  /* border-color: #ffbf00; */
-  border-left: solid 2px #ffbf00;
-  /* border-color: #ffbf00; */
 }
 
 /* img of product (shoe) */
@@ -137,7 +128,7 @@
 }
 
 /* grid layout instead of flexbox */
-.product {
+/* .product {
   display: grid;
   grid-template-columns: 200px 1fr 1fr;
   column-gap: 20px;
@@ -150,4 +141,4 @@
 
 .add-cart {
   grid-column: 1/-1;
-}
+} */
